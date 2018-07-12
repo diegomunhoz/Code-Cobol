@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+
+    <property name="hbm2ddl.auto">validate</property>
+      
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sistema_cip</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">root</property>
+
+    <mapping class="model.Arquivocip" />
+    <mapping class="model.Bookauxiliar" />
+    <mapping class="model.Bookenvio" />
+    <mapping class="model.Bookretorno" />
+    <mapping class="model.Booktag" />
+    <mapping class="model.Camposarquivocip" />
+    <mapping class="model.Dicionariodecampos" />
+    <mapping class="model.Dicionariodetipos" />
+    <mapping class="model.Linhabookauxiliar" />
+    <mapping class="model.Linhabookenvio" />
+    <mapping class="model.Linhabookretorno" />
+    <mapping class="model.Linhabooktag" />
+    <mapping class="model.Linhacodigoprogramacobol" />
+    <mapping class="model.Programacobolcip" />
+
+  </session-factory>
+</hibernate-configuration>
